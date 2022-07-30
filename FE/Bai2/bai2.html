@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thế giới di động</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style type="text/css">
+		*{
+			font-family: arial;
+			font-size: 12px;
+			margin: 0;
+		}
+		header {
+
+			display: flex;
+			background-color: #ffd400;
+			flex-direction: column;
+			align-items: center;
+			max-width: 100%;
+			padding: 2% 8%;
+		}
+		header div {
+			margin: 0 0.5%;
+			border-radius: 5px;
+		}
+		#header {
+			display: flex;
+			max-width: 100%;
+
+		}
+		#icon {
+			max-width: 20%;
+		}
+		#icon img {
+			max-width: 100%;	
+		}
+		.header-1 {
+			width: 8%;
+			background-color: rgba(255,172,10,.6);
+			font-size: 1.2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 0 0.5%;
+		}
+		
+		.header-2 {
+			width: 10%;
+			text-align: center;
+			font-size: 1.2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			
+		}
+		#city {
+			width: 13%;
+			display: flex;
+			text-align: left;
+			
+		}
+		#city div p {
+			font-size: 0.9rem;
+			margin-bottom: 5%;
+		}
+		#city i {
+			font-size: 1.3rem;
+			margin-left: 10%;
+		}
+		#search {
+			max-width: 40%;
+			display: flex;
+			background-color: #ffff;
+			border-radius: 5px;
+			
+		}
+		#search input {
+			border: none;
+			width: 100%;
+			border-radius: 5px;
+		}
+		#search i {
+			position: relative;
+			right: 0;
+			font-size: 2rem;
+			display: flex;
+			align-items: center;
+			padding-right: 3%;
+
+		}
+		#search input {
+			font-size: 2rem;
+		}
+		#question span{
+			width: 95%;
+			font-size: 1.2rem;
+		}
+		#question:before {
+			content: "";
+			width: 1.5px;
+			height: 80%;
+			background-color: #ffe56c;
+		}
+		#question:after {
+			content: "";
+			width: 1.5px;
+			height: 80%;
+			background-color: #ffe56c;
+			
+			left: 0;
+		}
+		#nav-parent {
+			display: flex;
+			width: 100%;
+			margin-top: 3%;
+			justify-content: center;
+		}
+		ul {
+			padding: 0;
+			width: 100%;
+			display: flex;
+		}
+		li {
+			width: 10%;
+			list-style: none;
+			padding-left: 1%;
+		}
+		#nav-parent ul li a {
+			color: #0C0B0B;
+			display: flex;
+			text-decoration: none;
+		}
+		#nav-parent ul li a p {
+			font-size: 1.2rem;
+		}
+		#nav-parent ul li a i {
+			margin-left: 4%;
+		}
+		#nav-parent ul li i {
+			font-size: 1.5rem;
+			margin-right: 10%;
+		}
+		#body {
+			background-color: #ff685f;
+			display: block;
+		}
+		.container {
+			display: flex;
+			width: 100%;
+		}
+
+		.box {
+			max-width: 15%;
+			background-color: #ffff;
+			margin: 1%;
+			text-align: center;
+			border-radius: 10px;
+			padding: 1%;	
+		}
+		.box p {
+			font-weight: 300;
+			font-size: 1.5rem;
+
+		}
+		.box img {
+			margin-top: 8%;
+			max-width: 100%;
+		}
+		.money {
+			display: flex;
+			margin-left: 10%;
+
+		}
+		.box h4 {
+			color: #D9390E;
+			font-weight: 600;
+			font-size: 2rem;
+			text-align: center;
+
+		}
+		.box h6 {
+			font-size: 1.2rem;
+			color: #eb5757;
+			background-color: #fff0e9;
+			margin-left: 10px;
+		}
+   
+	</style>
+</head>
+<body>
+	<header>
+		<div id="header">
+			<div id="icon" >
+				<img src="https://cdn.haitrieu.com/wp-content/uploads/2021/11/Logo-The-Gioi-Di-Dong-MWG-B-H.png">
+			</div>
+			<div class="header-1" id="city">
+				<div>
+				<p>Xem giá, tồn kho tại</p>
+				<h6>Hà Nội</h6>
+				</div>
+				<i class="fa-solid fa-caret-down"></i>
+			</div>
+			<div id="search">
+				<input type="text" name="">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
+			<div class="header-1" id="history">Lịch sử đơn hàng</div>
+			<div class="header-1" id="cart">
+				<i class="fa-solid fa-cart-shopping"></i>
+				Giỏ hàng
+			</div>
+			<div class="header-2" id="24h">
+				24h<br>
+				Công nghệ
+			</div>
+			<div class="header-2" id="question">
+				<span>Hỏi đáp</span>
+			</div>
+			<div class="header-2" id="App">
+				Game App
+			</div>
+		</div>
+		<div id="nav-parent">
+			<ul>
+				<li style="width: 9%;">
+					<a href="#">
+					<i class="fa-solid fa-mobile-screen-button"></i>
+					<p>Điện thoại</p>
+					</a>
+				</li>
+				<li style="width: 9%;">
+					<a href="#">
+					<i class="fa-solid fa-laptop"></i>
+					<p>Laptop</p>
+					</a>
+				</li>
+				<li style="width: 8%;">
+					<a href="#">
+					<i class="fa-solid fa-tablet-screen-button"></i>
+					<p>Tablet</p>
+					</a>
+				</li>
+				<li style="width: 9%;">
+					<a href="#">
+					<i class="fa-solid fa-headphones"></i>
+					<p>Phụ kiện</p>
+					</a>
+				</li>
+				<li style="width: 10%;">
+					<a href="#">
+					<i class="fa-solid fa-clock"></i>
+					<p>Smartwatch</p>
+					</a>
+				</li>
+				<li style="width: 9%;">
+					<a href="#">
+					<i class="fa-solid fa-clock"></i>
+					<p>Đồng hồ</p>
+					</a>
+				</li>
+				<li style="width: 13%;">
+					<a href="#">
+					<i class="fa-solid fa-computer"></i>
+					<p>PC, Máy in</p>
+					<i class="fa-solid fa-caret-down"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<p>Máy cũ giá rẻ</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<p>Sim, Thẻ cào</p>
+					</a>
+				</li>
+				<li style="width: 13%;">
+					<a href="#">
+					<p>Dịch vụ, tiện ích</p>
+					<i class="fa-solid fa-caret-down"></i>
+					</a>
+				</li>
+				
+
+			</ul>
+			
+		</div>
+	</header>
+	<div id="body">
+	<div class="container">
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+		<p></p>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	<div class="box">
+		<img src="https://thongsokythuat.vn/wp-content/uploads/Dien-thoai-Apple-iPhone-13-Pro-Max.jpg">
+		<p>Apple iPhone 13 Pro Max</p>
+		<div class="money">
+			<h4>20.000.000</h4>
+			<h6> 40% </h6>
+		</div>
+	</div>
+	</div>
+	</div>
+</body>
+</html>
