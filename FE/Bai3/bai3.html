@@ -4,8 +4,143 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		* {
+			font-family: arial;
+			font-size: 12px;
+			margin: 0;
+		}
+		header {
+			background-color: #077E6C;
+			width: 100%;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.8% 0;
+		}
+		header ul {
+			width: 80%;
+			list-style: none;
+			display: flex;
+			color: #FFFFFF;
+			justify-content: space-between;
+			align-items: center;
+
+		}
+		header ul li {
+			width: max-content;
+			margin: 0 0.5%;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			font-size: 10px;
+			font-weight: 600;
+		}
+		header ul li:hover {
+			color: #F6F050;
+			font-size: 1.5rem;
+		}
+
+		#body {
+			margin: 2% 10%;
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		#banner img {
+			width: 100%;	
+		}
+		#content {
+			margin-top: 2%;
+			max-width: 100%;
+			display: flex;
+		}
+		#content-left {
+			max-width: 50%;
+			margin-right: 2%;
+		}
+		#content img {
+			max-width: 100%;
+			border-radius: 5px;
+		}
+		#content-right {
+			max-width: 50%;
+			margin-left: 2%;
+			display: flex;
+		}
+		.content-right-1{
+			max-width: 50%;
+			margin-right: 2%;
+		}
+		.content-right-2 {
+			margin-left: 2%;
+			max-width: 50%;
+		}
+		.content-right-1 div {
+			display: flex;
+		}
+		.content-right-1 img {
+			max-width: 100%;
+		}
+		
+	</style>
 </head>
 <body>
-	
+	<header>
+		<ul>
+			<li><i style=" font-size: 1.5rem;" class="fa-solid fa-house"></i></li>
+			<li>THỜI SỰ - XÃ HỘI</li>
+			<li>KINH DOANH</li>
+			<li>QUỐC TẾ</li>
+			<li>THỂ THAO</li>
+			<li>CƯ DÂN MẠNG</li>
+			<li>GIẢI TRÍ</li>
+			<li>PHÁP LUẬT</li>
+			<li>SỐNG KHỎE</li>
+			<li>XE</li>
+			<li>CÔNG NGHỆ</li>
+			<li>ĐỜI SỐNG</li>
+			<li>KHÁM PHÁ</li>
+			<li>VIDEO</li>
+			<li style="width: 10%; position: relative; right: 0;">
+				<select style="border: 0; background-color: #077E6C; color: #ffff; font-weight: 600;">
+					<option value="">CHỦ ĐỀ HAY</option>
+					<option value="">CHỦ ĐỀ RẤT HAY</option>
+				</select>
+			</li>
+		</ul>
+	</header>
+	<div id="body">
+		<div id="banner">
+			<img src="https://masterisehomes.com/the-rivus/images/section03_img1.png" alt="">
+		</div>
+		<div id="content">
+			<div class="content-left">
+				<img src="https://masterisehomes.com/the-rivus/images/sction02_img2.jpg" alt="">
+			</div>
+			<div id="content-right">
+				<div class="content-right-1">
+					<div style="display: flex; flex-direction: column;">
+						<img width="100%" src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2021/5/26/913299/Ngan-Ha25.jpg" alt="">
+						<h6 style="font-size: 1.5rem;">Nguyên nhân vụ tai nạn liên hoàn ở Hà Đông khiến 1 người tử vong</h6>
+					</div>
+					<div style="margin: 3% 0;">
+						<img height="50%" width="40%" src="https://vcdn-thethao.vnecdn.net/2022/07/30/3676f3bfcc710e2f5760-jpeg-9192-1659163438.jpg" alt="">
+						<p style="font-size: 1.2rem; margin-left: 2%; ">Quang Hải bất ngờ được HLV Pau FC khen trước trận khai màn Ligue2, mở ra cơ hội đá chính</p>
+					</div>
+				</div>
+				<div class="content-right-2">
+					<div style="position: relative; left: 0; width: 5px; height: 20px; background-color: #D60909; float: left; margin-right: 10%;"></div>
+					<p style="font-size: 1.2rem">Được tài trợ</p>
+					<img style="width: 100%; margin: 5% 0; height: 50%;" src="https://vinhomesmartcitytaymo.vn/images/upload/images/phoi-canh-vinhomes-smart-city-22-min.jpg" alt="">
+					<h5 style="font-size: 1.5rem;">Nhà đầu tư kỳ vọng vào dự án mang giá trị thực</h5>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
