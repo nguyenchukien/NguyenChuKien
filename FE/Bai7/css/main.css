@@ -1,0 +1,151 @@
+header {
+    width: 100%;
+    background-color: #ffff;
+}
+
+.header-list {
+    max-width: 100%;
+    margin: 20px 25%;
+    height: 100px;
+    display: flex;
+}
+
+.header-box {
+    position: relative;
+    top: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-top: 1px rgb(66, 63, 63) solid;
+    border-bottom: 1px rgb(66, 63, 63) solid;
+    width: 15%;
+}
+
+.header-list img {
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.logo {
+    height: 180px;
+}
+
+#body {
+    padding-top: 80px;
+    height: max-content;
+    background-color: rgba(240, 235, 235, 0.977);
+
+}
+
+.work {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.work>h1 {
+    max-width: 100%;
+    margin: 10px 10%;
+    font-size: 3rem;
+    color: rgb(44, 128, 100);
+}
+
+.work-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-box {
+    width: 30%;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.work-box>img {
+    width: 100%;
+}
+
+.work-box>h3 {
+    font-size: 1.7rem;
+    margin: 5px 0;
+}
+
+.about {
+    width: 100%;
+    padding: 3% 10%;
+    background-color: #ffff;
+    display: flex;
+}
+
+.about h2 {
+    color: rgb(27, 237, 234);
+    font-size: 2rem;
+}
+
+.about-me {
+    max-width: 50%;
+    padding-right: 10%;
+}
+
+.about p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.stalker {
+    max-width: 50%;
+}
+
+.say-hello {
+    width: 100%;
+    background-color: rgb(64, 218, 198);
+    color: #ffff;
+}
+
+.say-hello h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.say-hello input {
+    border: none;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.hello {
+    width: 100%;
+    padding: 3% 10%;
+}
+
+.say-hello div {
+    margin: 20px 0;
+}
+
+.say-hello div textarea {
+    border: none;
+    width: 80%;
+}
+
+.say-hello div h6 {
+    margin-bottom: 5px;
+}
+
+.say-hello button {
+    font-size: 1.2rem;
+}
+
+.say-hello::before {
+    content: " ";
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(#ffff 0%, transparent 0%), linear-gradient(135deg, #ffff 33.33%, transparent 33.33%) 0 0%, rgb(64, 218, 198) linear-gradient(45deg, rgb(64, 218, 198) 33.33%, rgb(64, 218, 198) 33.33%) 0 0%;
+    background-repeat: repeat-x;
+    background-size: 0px 100%, 9px 27px, 9px 27px;
+}
